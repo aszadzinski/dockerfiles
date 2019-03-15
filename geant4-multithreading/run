@@ -1,0 +1,10 @@
+source geant4-install/bin/geant4.sh
+
+cd BINA-build
+
+cmake -DGeant4_Dir=/root/geant4-install/lib64/Geant4-10.4.2 /root/BINA
+
+make -j4
+
+./bina_run
+
